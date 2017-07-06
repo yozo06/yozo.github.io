@@ -1,15 +1,176 @@
-*                               { margin: 0; padding: 0; }
-body                            { font: 12px "Lucida Grande", Sans-Serif,white; background: url(images/bg.png);}
-h2                              { color: #fa9f00; font: 30px Helvetica, Sans-Serif; margin: 20px 0 10px 30px; text-align: left;}
-#page-wrap                      { width: 95%;position: relative; }
+p{
+  font-size: 12px;
+}
+#br {
+    display: block; 
+    content: ""; 
+    margin-top: 10px; 
+}
+.pc{
+  width:50px;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  width: 50px !important;
+  height: 50px !important;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 50px;
+  z-index: 2;
+}
+.percent:after {
+  content: '';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.angular {
+  margin-top: 100px;
+  margin-left: 35%;
+}
+.angular .chart {
+  margin-top: 0;
+}
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 3em;
+}
+.span6 {
+  float: left;
+  width: 50%;
+}
 
-/*#chat-wrap                      { border: 1px solid #eee; margin: 0 0 15px 0; }*/
-#chat-area                      { height: 550px;width: 1460px;margin-left: 18px; overflow: auto;padding: 20px; background: black; color: white; }
-#chat-area span                 { color: white; background: #333; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 5px 0 0; }
-#chat-area p                    { padding: 8px 0;}
 
-#name-area                      { position: absolute; top: 12px; right: 0; color: white; font: bold 12px "Lucida Grande", Sans-Serif; text-align: right; }   
-#name-area span                 { color: #fa9f00; }
+body{
+  color:black;
+  overflow-wrap:break-word;
+  display:inline;
+}
+header{
+  background-color:black;
+  }
+#h1{
+    color:white;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:5%;
+  }
+#project_name{
+  font-weight:bold;
+    float:left !important;
+}
+#start_date{
 
-#send-message-area p            { float: left; color: white;padding:10px;font-size: 14px;height:50px;width:25px;background: black;margin-left: 18px;margin-top: 5px; }
-#sendie                         { position: absolute;height:50px;width: 1435px; border:none; padding: 10px; font: 12px "Lucida Grande", Sans-Serif; background-color: black; margin-top: 5px;margin-right:18px;color:white; }
+}
+#b_version{
+  font-weight:bold;
+}
+#upcoming_rls{
+  float:right;
+}
+#fl{
+  float:left;
+}
+span{
+  }
+.no-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.no-margin{
+  margin: 0px;
+}
+.rc2{
+  max-height: 120px;
+}
+#row1{
+    min-height: 100px;
+    padding: 10px;
+  }
+#row2{
+  min-height: 350px;
+  min-width: 370px;
+  padding-top:10px;
+}
+#row3{
+  min-width: 370px;
+  min-height: 80px;
+  padding-bottom:10px;
+  padding-top: 10px;
+}
+#r1c1{
+  min-width: 400px;
+}
+#r1c2{
+  min-width: 400px;
+
+}
+#mob{
+  min-width: 350px;
+}
+#dev_env{
+  float:right;
+}
+#prod_env{
+  float: right;
+}
+
+div.main_div{
+    margin:0;
+    padding:10px;
+    width: 90%;
+    height: 40px;    
+    position:absolute;
+    overflow: hidden;
+}
+div.text_wrapper{    
+    height:20px;
+    /*z-index:10;*/
+    background:transparent;
+    white-space: nowrap;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    color:black;
+    font-size:15px;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+    position:absolute;
+    -webkit-animation: anim 8.5s infinite;
+    /*animation: anim 8.5s infinite;
+    animation-direction: alternate-reverse;*/
+    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes anim {
+     from {
+         left: -50%;         
+     }
+     to {
+         left:100%;
+     }
+}
+
+@keyframes anim {
+   from {
+         left: -20%;
+     }
+     to {
+         left:100%;
+     }
+}
